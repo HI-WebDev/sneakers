@@ -1,0 +1,416 @@
+body {
+    height: 4000px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* start navbar */
+.navbar {
+    padding-top: 0rem;
+    /* background-color: #eee; */
+}
+
+.navbar .navbar-brand {
+    width: 120px;
+    height: 45px;
+}
+
+.navbar .navbar-brand img {
+    width: 120px;
+    height: 45px;
+}
+
+/* .navbar .navbar-brand .title {
+    width: 115px;
+    height: 60px;
+} */
+
+.navbar-collapse {
+    height: 60px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-collapse .navbar-nav {
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+.navbar-collapse .navbar-nav li a {
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navbar-collapse .navbar-nav li a:hover,
+.navbar-collapse .navbar-nav li .active {
+    color: #dd5994;
+}
+
+.shortcut {
+    justify-content: center;
+}
+
+.navbar-collapse .shortcut svg {
+    cursor: pointer;
+}
+
+.navbar-collapse .shortcut svg:hover {
+    color: red;
+}
+
+.break {
+    height: 3px;
+    background-color: #9290905e;
+    position: absolute;
+    top: 65px;
+}
+
+/* end navbar */
+
+/* start main */
+.main .title {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#771A5F, #AD1D49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.btn {
+    background: linear-gradient(to right, #b317da, #920992);
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.5rem 1.3rem;
+    transition: 0.3;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn .angle {
+    color: #fff;
+}
+
+.btn:hover .angle {
+    position: relative;
+    left: 3px;
+}
+
+.main .short {
+    flex-direction: column;
+
+}
+
+.main .short svg {
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3;
+}
+
+.main .short svg:hover {
+    position: relative;
+    top: 2px;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.twitter {
+    color: #1da1f2;
+}
+
+.reddit {
+    color: #ff4500;
+}
+
+.instagram {
+    color: #f56040;
+}
+
+/* end main */
+
+
+/* start products */
+
+.products .card {
+    box-shadow: 0px 0px 4px 1px #bd23bd;
+    overflow: hidden;
+    width: 100% !important;
+}
+
+.products h2 {
+    color: #bd23bd;
+    /* font-weight: 700; */
+    font-size: 50px;
+    margin-top: 100px !important;
+}
+
+.products .image {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.products .card:hover .image {
+    width: 185px;
+    position: relative;
+    bottom: 2px;
+}
+
+.products .card .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(-100%);
+    top: 18px;
+    transition: 0.4s linear;
+}
+
+.products .card:hover .options {
+    transform: translateX(20px);
+}
+
+
+.products .card .options .op {
+    border: 2px solid #7c78784d;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+
+.products .card .options .op:hover {
+    color: red;
+}
+
+.products .card .card-title {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.card-price {
+    font-size: 20px;
+}
+
+.rate svg {
+    color: #FFDF00;
+}
+
+
+.rate .no {
+    color: #eee;
+}
+
+/* end products */
+
+
+/* start about us  */
+.about h2 {
+    margin-top: 20px !important;
+}
+
+.about .thumb {
+    flex-direction: column;
+    width: 150px;
+}
+
+.about .thumb .image {
+    width: 140px;
+    margin-right: 10px
+}
+
+.about .thumb .image img {
+    background: linear-gradient(to right, var(--bs-indigo), #b147e7);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.about .thumb .image img:hover,
+.about .thumb .image img.active {
+    opacity: .6;
+}
+
+.about .principale {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    border: 2px solid purple;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px purple;
+}
+
+.about .description {
+    border: 2px solid purple;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(238, 98, 243);
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 30px;
+}
+
+.abBtn {
+    background: #fff;
+    border: 2px solid purple;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 1px rgb(238, 98, 243);
+    color: #000;
+}
+
+.abBtn:hover,
+.abBtn:focus {
+    color: #000;
+    box-shadow: 0px 0px 5px 1px rgb(238, 98, 243);
+}
+
+.abBtn:hover {
+    background: rgb(190, 19, 196);
+    color: #fff;
+}
+
+/* end about us  */
+
+/* start review */
+.rev {
+    margin-top: 100px;
+}
+
+.comments {
+    border-radius: 10px;
+}
+
+.comments .info .prfl {
+    width: 60px;
+    height: 60px !important;
+    transition: 0.4s;
+}
+
+
+.comments .info .prfl img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0px 0px 0px 3px var(--bs-gray-400);
+    transition: 0.4s;
+}
+
+.comments .info .prfl img:hover,
+.comments .info .prfl:hover {
+    width: 55px !important;
+    height: 55px !important;
+}
+
+/* end review */
+
+/* start our service */
+.service .purple {
+    color: #b317da;
+}
+
+.service .truck,
+.rotate,
+.support {
+    color: #ffa600;
+    font-size: 55px;
+}
+
+/* end our service */
+
+
+/* start login */
+.login {
+    background: url(/imgs/loging_bg.png);
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-position-x: 0rem;
+    background-position-y: -20rem;
+}
+
+.login a {
+    text-decoration: none;
+    color: #1877f2;
+}
+
+.sign {
+    list-style: none;
+}
+
+svg {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3ms;
+}
+
+.login .social svg:hover {
+    margin-top: 2.5px;
+}
+
+.google {
+    color: #4285f4;
+}
+
+.github {
+    color: #4078c0;
+}
+
+.form-control {
+    caret-color: #aaa;
+    background-color: transparent;
+    border-width: 1px;
+    box-shadow: 1px 1px purple;
+    border-color: rgb(146, 28, 156);
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: transparent;
+    border-color: #548fe7;
+    outline: 0;
+    box-shadow: none;
+}
+
+.login .sign {
+    transition: 0.5ms;
+}
+
+.login .sign:hover {
+    opacity: .8;
+}
+
+/* end login */
+
+
+.footer .news {
+    background-color: #ddd;
+    border: none;
+    outline: 0;
+}
+
+.mainColor {
+    color: #000dc5;
+}
+
+
+.footer .subs {
+    /* width: 60% !important; */
+}
